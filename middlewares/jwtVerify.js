@@ -7,7 +7,7 @@ function jwtVerify(req,res,next){
     jwt.verify(access_Token,
         process.env.ACCESS_TOKEN_SECRET,
         (err,decoded)=>{
-            if(err) return res.json("wrong");//Invalid token
+            if(err) res.sendStatus(401);//Invalid token
             req.user = decoded.email;
             next()
         }

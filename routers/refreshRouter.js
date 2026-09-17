@@ -4,6 +4,7 @@ import pool from '../database/dbconfig.js';
 let router = express.Router()
 
 router.post('/', (req,res,next)=> {
+    console.log("reached")
     let refresh_Token = req.cookies.jwt;
     if(!refresh_Token) return res.sendStatus(401)
     jwt.verify(
@@ -12,17 +13,24 @@ router.post('/', (req,res,next)=> {
         async (err,decoded)=> {  
             if(err) return res.sendStatus(401)
             let email = decoded.email;
-            let [rows,cols]= await pool.query(`SELECT refresh_Token FROM customers WHERE email = ? `,[email])
-            console.log(rows)
-            console.log(rows[0].refresh_Token)
+            try{
+                let [rows,cols]= await pool.query(`SELECT refresh_Token FROM customers WHERE email = ? `,[email])
             if(rows[0].refresh_Token!=refresh_Token) return res.sendStatus(401)
             let access_Token =jwt.sign(
                 {email},
                 process.env.ACCESS_TOKEN_SECRET,
                 {"expiresIn":'30s'}
-                )
+                ) 
+            console.log("almost done")
             res.json(access_Token)
-        })
+            }
+            catch(err){
+                res.json({'error':err.message})
+            }
+            next()
+            
+        }
+    )
 })
 
 export default router;

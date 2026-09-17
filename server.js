@@ -29,7 +29,7 @@ server.use(loggerMiddleware) // logger middleware
 server.use('/', homeRouter)
 server.use('/register', registerRouter)
 server.use('/login',loginRouter)
-server.use('/products',jwtVerify, productsRouter)
+server.use('/products', productsRouter)
 server.use('/refresh', refreshRouter)
 
 
