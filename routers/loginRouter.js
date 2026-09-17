@@ -9,7 +9,6 @@ router.get('/', (req,res,next)=> {
 })
 
 router.post('/', async (req,res,next)=>{
-    console.log(req.body)
     let {email,password}= req.body;
     let refresh_Token = jwt.sign(
         {email},
@@ -21,7 +20,7 @@ router.post('/', async (req,res,next)=>{
         process.env.ACCESS_TOKEN_SECRET,
         {expiresIn:'30s'}
     )
-    res.cookie('jwt',access_Token,{httpOnly:true, maxAge:1000*60*60*24})
+    res.cookie('jwt',refresh_Token,{httpOnly:true, maxAge:1000*60*60*24})
     let result = await login(email,password,refresh_Token,'customer')
     res.json(access_Token)
     //res.render('login',{result})

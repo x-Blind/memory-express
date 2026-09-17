@@ -1,6 +1,6 @@
 function errorHandler(err,req,res,next){
     if(err){
-        console.log("heyyyyyyy")
+        console.log("errrrrrrrrrrrorrrrrrrrrrr")
         res.send({'err':err.message})
     }
     next();
