@@ -3,9 +3,6 @@ import path from 'path'
 import url from 'url'
 import dotenv from 'dotenv';
 dotenv.config()
-console.log(process.env.CLOUDINARY_NAME)
-console.log(process.env.CLOUDINARY_API_KEY)
-console.log(process.env.CLOUDINARY_API_SECRET)
 
 cloudinary.v2.config(
     {
@@ -23,7 +20,7 @@ async function get_Image_Url(file){
         console.log(images,file) 
         let result = await cloudinary.v2.uploader.upload(path.join(images,file),
         {   //THE OPTIONS FOLDERNAME AND THE PUBLIC_ID WILL BE FILE NAME WITHOUT THE EXTENSION 
-            folder:'customer',
+            folder:'products',
             public_id:path.parse(file).name.toUpperCase(),
         })//RETURN THE URL
         return result['url'] 
@@ -31,12 +28,15 @@ async function get_Image_Url(file){
         console.log(error.message)
     }
 }
+
 export default get_Image_Url;
 
 
 //let files  =  fs.readdirSync(images) //get all file name ['patrick.png', 'sheldon.png', 'spong.png']
 /* THE result returned from the uploader
 {
+ men
+
   asset_id: '1a9fff56485ec1f10a145fe8f86644b0',
   public_id: 'customer/ASHWAGANDHA',
   version: 1789749456,

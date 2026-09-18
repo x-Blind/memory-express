@@ -31,10 +31,12 @@ async function login(email,password,refresh_Token){
         let user = rows[0]
         if(!user) return {message:'Email was not found'};
         if(user){
-            let match = bcrypt.compare(user.password,password)
+            let match = await bcrypt.compare(user.password,password)
             if(!match) return {message:'Wrong Password'};
             await pool.query(`UPDATE customers SET refresh_Token = ? WHERE email = ?`, [refresh_Token,email])
             return {message:'logged'};
         }
 }
+
+
 export {register,login};

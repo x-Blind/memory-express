@@ -4,7 +4,7 @@ let pool = mysql.createPool(
     {
         host:`127.0.0.1`,
         user:'root',
-        password:`${process.env.DBPASSWORD}`,
+        password:`${process.env.DBPASSWORD||'mybabeandme123'}`,
         database:'store'
     }
 ).promise();

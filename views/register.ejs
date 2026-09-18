@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REGISTER</title>
-</head>
 
-<body>
     <%- include('./partials/header') %>    
+    <h1>WELCOME IN REGISTER</h1>
     <form class="register-form" action="/register" method="post">
 
         <label> EMAIL:
@@ -24,6 +17,4 @@
     <% if(result){ %>
         <p><%= result.message %></p>
     <% } %>
-</body>
-<script src="index.js"></script>
-</html>
+    <%- include('./partials/footer') %>    

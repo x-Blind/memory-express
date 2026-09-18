@@ -5,7 +5,7 @@ let router = express.Router();
 
 
 router.get('/', (req,res,next)=> {
-    res.render('register',{result:null})
+    res.render('register',{title:'register',result:null})
     next();
 })
 

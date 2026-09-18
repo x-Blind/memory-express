@@ -4,7 +4,7 @@ let router = express.Router();
 
 
 router.get('/',(req,res,next)=>{
-    res.render('products')
+    res.render('products',{title:'products'})
     next()
 })
 

@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken';
 let router = express.Router();
 
 router.get('/', (req,res,next)=> {
-    res.render('login',{result:null})
+    res.render('login',{title:'login',result:null})
     next()
 })
 

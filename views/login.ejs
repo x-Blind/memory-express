@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <%- include('./partials/header') %>    
+
+    <%- include('./partials/header') %>
+    <h1>WELCOME IN LOGIN</h1>
     <form class="login-Form" action="/login" method="post">
 
         <label>EMAIL:
@@ -23,8 +16,4 @@
     <% if(result){ %>
         <p><%= result.message %></p>
     <% } %>
-  
-</body>
-<script src="index.js" type="module"></script>
-
-</html>
+    <%- include('./partials/footer') %>    

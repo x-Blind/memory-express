@@ -1,0 +1,422 @@
+[
+  {
+    "product_name": "ASHWAGANDHA",
+    "price": 300,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 10,
+    "description": "Supports stress management and mood",
+    "image": "ASHWAGANDHA.jpg"
+  },
+  {
+    "product_name": "B-COMPLEX",
+    "price": 250,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 15,
+    "description": "B vitamin complex for general nutritional support",
+    "image": "B-COMPLEX.jpg"
+  },
+  {
+    "product_name": "CALCIUM MAGNESIUM D3",
+    "price": 350,
+    "size": 100,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 12,
+    "description": "Calcium magnesium and vitamin D3 supplement",
+    "image": "CALCIUM MAGNESIUMD3.jpg"
+  },
+  {
+    "product_name": "CENTRUM ADULTS",
+    "price": 650,
+    "size": 130,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 8,
+    "description": "Complete multivitamin and mineral supplement for adults",
+    "image": "CENTRUM ADULTS 130TABS.jpg"
+  },
+  {
+    "product_name": "CENTRUM ENERGY",
+    "price": 700,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 10,
+    "description": "Multivitamin formulated to support energy and metabolism",
+    "image": "CENTRUM ENERGY.jpg"
+  },
+  {
+    "product_name": "CENTRUM KIDS CHEWABLES",
+    "price": 500,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "berry",
+    "stock": 10,
+    "description": "Chewable multivitamin for children",
+    "image": "CENTRUM KIDS CHEWABLES.jpg"
+  },
+  {
+    "product_name": "CENTRUM MEN +50 SILVER",
+    "price": 750,
+    "size": 100,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 7,
+    "description": "Multivitamin formulated for men over 50",
+    "image": "CENTRUM MEN +50 SILVER.jpg"
+  },
+  {
+    "product_name": "CENTRUM SILVER ADULT +50",
+    "price": 750,
+    "size": 100,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 8,
+    "description": "Multivitamin and mineral supplement for adults over 50",
+    "image": "CENTRUM SILVER ADULT+50.jpg"
+  },
+  {
+    "product_name": "CENTRUM SILVER WITH LUTEIN",
+    "price": 780,
+    "size": 100,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 8,
+    "description": "Multivitamin with lutein for adults",
+    "image": "CENTRUM SILVER WITH LUTEIN.jpg"
+  },
+  {
+    "product_name": "CENTRUM WITH LUTEIN",
+    "price": 700,
+    "size": 100,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 9,
+    "description": "Daily multivitamin with lutein",
+    "image": "CENTRUM WITH LUTEIN.jpg"
+  },
+  {
+    "product_name": "CENTRUM WOMEN 50+ SILVER",
+    "price": 750,
+    "size": 100,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 7,
+    "description": "Multivitamin formulated for women over 50",
+    "image": "CENTRUM WOMEN 50+ SILVER.jpg"
+  },
+  {
+    "product_name": "COQ10",
+    "price": 400,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 14,
+    "description": "Coenzyme Q10 nutritional supplement",
+    "image": "COQ10.jpg"
+  },
+  {
+    "product_name": "GINKGO BILOBA",
+    "price": 300,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 15,
+    "description": "Ginkgo biloba herbal supplement",
+    "image": "GINKGO BILOBA.jpg"
+  },
+  {
+    "product_name": "GINSENG COMPLEX",
+    "price": 350,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 12,
+    "description": "Ginseng complex herbal supplement",
+    "image": "GINSENG COMPLEX.jpg"
+  },
+  {
+    "product_name": "GREEN COFFEE BEAN",
+    "price": 300,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 13,
+    "description": "Green coffee bean extract supplement",
+    "image": "GREEN COFFEE BEAN.jpg"
+  },
+  {
+    "product_name": "IRON",
+    "price": 220,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 20,
+    "description": "Iron nutritional supplement",
+    "image": "IRON.jpg"
+  },
+  {
+    "product_name": "L ARGININE",
+    "price": 350,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 12,
+    "description": "L-arginine amino acid supplement",
+    "image": "L Arginine.jpg"
+  },
+  {
+    "product_name": "L CARNITINE",
+    "price": 400,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 12,
+    "description": "L-carnitine nutritional supplement",
+    "image": "L CARNITINE.jpg"
+  },
+  {
+    "product_name": "MACA",
+    "price": 300,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 15,
+    "description": "Maca root herbal supplement",
+    "image": "MACA.jpg"
+  },
+  {
+    "product_name": "MAGNESIUM",
+    "price": 300,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 15,
+    "description": "Magnesium nutritional supplement",
+    "image": "MAGNESIUM.jpg"
+  },
+  {
+    "product_name": "MELATONIN",
+    "price": 250,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 15,
+    "description": "Melatonin supplement for sleep support",
+    "image": "MELATONIN.jpg"
+  },
+  {
+    "product_name": "MILK THISTLE",
+    "price": 300,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 12,
+    "description": "Milk thistle herbal supplement",
+    "image": "MILK THISTLE.jpg"
+  },
+  {
+    "product_name": "MOVE FREE JOINT HEALTH",
+    "price": 650,
+    "size": 80,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 8,
+    "description": "Joint health nutritional supplement",
+    "image": "MOVE FREE JOINT HEALTH.jpg"
+  },
+  {
+    "product_name": "MOVE FREE ULTRA 3X",
+    "price": 750,
+    "size": 80,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 7,
+    "description": "Advanced joint health supplement",
+    "image": "MOVE FREE ULTRA 3X.jpg"
+  },
+  {
+    "product_name": "NATROL BIOTIN",
+    "price": 350,
+    "size": 100,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 10,
+    "description": "Biotin nutritional supplement",
+    "image": "NATROL BIOTIN.jpg"
+  },
+  {
+    "product_name": "NATROL DHEA 50MG",
+    "price": 500,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 8,
+    "description": "DHEA 50 mg supplement",
+    "image": "NATROL DHEA 50MG.jpg"
+  },
+  {
+    "product_name": "NEW LOOK CENTRUM MEN 120TABS",
+    "price": 650,
+    "size": 120,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 8,
+    "description": "Complete multivitamin formulated for men",
+    "image": "NEW LOOK CENTRUM MEN 120TABS.jpg"
+  },
+  {
+    "product_name": "NEW LOOK CENTRUM WOMEN 120TABS",
+    "price": 650,
+    "size": 120,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 8,
+    "description": "Complete multivitamin formulated for women",
+    "image": "NEW LOOK CENTRUM WOMEN 120TABS.jpg"
+  },
+  {
+    "product_name": "OMEGA-3 FISH OIL",
+    "price": 450,
+    "size": 100,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 15,
+    "description": "Omega-3 fish oil nutritional supplement",
+    "image": "OMEGA-3 FISH OIL.jpg"
+  },
+  {
+    "product_name": "ONE A DAY MENS",
+    "price": 550,
+    "size": 100,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 10,
+    "description": "Daily multivitamin formulated for men",
+    "image": "ONE A DAY MENS.jpg"
+  },
+  {
+    "product_name": "OPTIMIZED FOLATE",
+    "price": 300,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 12,
+    "description": "Folate nutritional supplement",
+    "image": "OPTIMIZED FOLATE.jpg"
+  },
+  {
+    "product_name": "OSTEOCARE",
+    "price": 400,
+    "size": 90,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 10,
+    "description": "Calcium and mineral supplement for bone health",
+    "image": "OSTEOCARE.jpg"
+  },
+  {
+    "product_name": "PERFECTIL HAIR",
+    "price": 500,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 10,
+    "description": "Nutritional supplement formulated for hair support",
+    "image": "PERFECTIL HAIR 60TABS.jpg"
+  },
+  {
+    "product_name": "POTASSIUM",
+    "price": 250,
+    "size": 100,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 15,
+    "description": "Potassium nutritional supplement",
+    "image": "POTASSIUM.jpg"
+  },
+  {
+    "product_name": "RASPBERRY KETONES",
+    "price": 300,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 12,
+    "description": "Raspberry ketone 500 mg supplement",
+    "image": "Raspberry Ketones 500mg.jpg"
+  },
+  {
+    "product_name": "SAW PALMETTO",
+    "price": 350,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 12,
+    "description": "Saw palmetto herbal supplement",
+    "image": "SAW PALMETTO.jpg"
+  },
+  {
+    "product_name": "TRIBULUS TERRESTRIS",
+    "price": 350,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 12,
+    "description": "Tribulus terrestris herbal supplement",
+    "image": "TRIBULUS TERRESTRIS.jpg"
+  },
+  {
+    "product_name": "TURMERIC",
+    "price": 300,
+    "size": 60,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 15,
+    "description": "Turmeric herbal supplement",
+    "image": "TURMERIC.jpg"
+  },
+  {
+    "product_name": "VITAMIN D3 125MCG",
+    "price": 250,
+    "size": 100,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 15,
+    "description": "Vitamin D3 125 mcg nutritional supplement",
+    "image": "VITAMIN D3 125MCG.jpg"
+  },
+  {
+    "product_name": "VITAMIN D3 250MCG",
+    "price": 300,
+    "size": 100,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 15,
+    "description": "Vitamin D3 250 mcg nutritional supplement",
+    "image": "VITAMIN D3 250MCG.jpg"
+  },
+  {
+    "product_name": "VITAMIN E",
+    "price": 300,
+    "size": 100,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 15,
+    "description": "Vitamin E nutritional supplement",
+    "image": "VITAMIN E.jpg"
+  },
+  {
+    "product_name": "ZINC",
+    "price": 250,
+    "size": 100,
+    "unit": "capsule",
+    "flavor": "unflavored",
+    "stock": 20,
+    "description": "Zinc nutritional supplement",
+    "image": "ZINC.jpg"
+  }
+]
