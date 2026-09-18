@@ -4,7 +4,6 @@ import pool from '../database/dbconfig.js';
 let router = express.Router()
 
 router.post('/', (req,res,next)=> {
-    console.log("reached")
     let refresh_Token = req.cookies.jwt;
     if(!refresh_Token) return res.sendStatus(401)
     jwt.verify(
@@ -21,7 +20,6 @@ router.post('/', (req,res,next)=> {
                 process.env.ACCESS_TOKEN_SECRET,
                 {"expiresIn":'30s'}
                 ) 
-            console.log("almost done")
             res.json(access_Token)
             }
             catch(err){

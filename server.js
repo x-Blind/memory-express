@@ -30,7 +30,6 @@ server.use('/', homeRouter)
 server.use('/register', registerRouter)
 server.use('/login',loginRouter)
 server.use('/products', productsRouter)
-server.use('/refresh', refreshRouter)
 
 
 
