@@ -1,0 +1,19 @@
+<% if(hx){ %>
+    <title> <%= title %> </title>
+<% } %>
+<h1>WELCOME IN LOGIN</h1>
+<form class="login-Form" action="/login" method="post">
+
+    <label>EMAIL:
+        <input id="name" name="email" type="text" >
+    </label>
+    <label>PASSWORD:
+        <input id="password" name="password" type="text">
+    </label>
+
+    <button>Login</button>
+
+</form>
+<% if(result){ %>
+    <p><%= result.message %></p>
+<% } %>

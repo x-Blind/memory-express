@@ -5,8 +5,11 @@ let router = express.Router();
 
 
 router.get('/', (req,res,next)=> {
-    res.render('register',{title:'register',result:null})
-    next();
+    if(req.headers['hx-request']){
+        return res.render('partials/register',{hx:true,title:'registerhtmx',result:null})
+    }
+
+    res.render('app',{hx:false, page:'register', title:'register',result:null})
 })
 
 router.post('/', async (req,res,next)=> {

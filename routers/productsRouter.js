@@ -4,8 +4,10 @@ let router = express.Router();
 
 
 router.get('/',(req,res,next)=>{
-    res.render('products',{title:'products'})
-    next()
+    if(req.headers['hx-request'] === 'true'){
+        return res.render('partials/products', {hx:true, title:'productshtmx'} )
+    }
+    res.render('app', {hx:false, page:'products', title:'products'} )
 })
 
 

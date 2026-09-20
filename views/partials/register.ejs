@@ -1,0 +1,17 @@
+<h1>WELCOME IN REGISTER</h1>
+<form class="register-form" action="/register" method="post">
+
+    <label> EMAIL:
+        <input id="email" name="email" type="text">
+    </label>
+
+    <label> PASSWORD:
+        <input id="password" name="password" type="password">
+    </label>
+
+    <button>SUBMIT</button>
+    
+</form>
+<% if(result){ %>
+    <p><%= result.message %></p>
+<% } %>

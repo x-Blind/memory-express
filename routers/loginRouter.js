@@ -4,8 +4,10 @@ import jwt from 'jsonwebtoken';
 let router = express.Router();
 
 router.get('/', (req,res,next)=> {
-    res.render('login',{title:'login',result:null})
-    next()
+    if(req.headers['hx-request']=== 'true'){
+        return res.render('partials/login', {hx:true, title:'loginhtmx', result:null} )
+    }
+        res.render('app', {hx:false, page:'login', title:'login',result:null} )
 })
 
 router.post('/', async (req,res,next)=>{
