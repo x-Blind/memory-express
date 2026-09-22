@@ -2,7 +2,8 @@
     <title> <%= title %> </title>
 <% } %>
 <h1>WELCOME IN LOGIN</h1>
-<form class="login-Form" action="/login" method="post">
+<form class="login-Form" action="/login" method="post" 
+hx-post="/login" hx-target="#app" hx-swap="innerHTML">
 
     <label>EMAIL:
         <input id="name" name="email" type="text" >
@@ -12,8 +13,8 @@
     </label>
 
     <button>Login</button>
-
-</form>
 <% if(result){ %>
-    <p><%= result.message %></p>
+    <p> <%=result.message%></p>
 <% } %>
+</form>
+

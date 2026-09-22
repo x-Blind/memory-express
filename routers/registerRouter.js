@@ -5,20 +5,22 @@ let router = express.Router();
 
 
 router.get('/', (req,res,next)=> {
-    if(req.headers['hx-request']){
-        return res.render('partials/register',{hx:true,title:'registerhtmx',result:null})
+    if(res.locals.isHtmx){
+        return res.render('partials/register',{hx:true,title:'REGISTERHTMX',result:false})
     }
-
-    res.render('app',{hx:false, page:'register', title:'register',result:null})
+    res.render('app',{hx:false, title:'REGISTERHTML', page:'register', result:false})
 })
 
 router.post('/', async (req,res,next)=> {
     let {email,password} = req.body;
-    let result= await register(email,'customer',password) // result = {message:'Registration successful'} 
-    res.render('register',{
-        result 
-    })
-
+    let result= await register(email,'customer',password) 
+    // result = {message:'Registration successful'} 
+    if(res.locals.isHtmx){
+        return res.render('partials/register',
+        {hx:true,title:'REGISTER', result })
+    }
+    res.render('app',{hx:false, title:'REGISTER', page:'register', result  })
 })
 
 export default router;
+//, "historyCacheSize": 0}

@@ -1,4 +1,11 @@
 <% if(hx){ %>
     <title> <%= title %> </title>
 <% } %>
+<% if(email){ %>
+    <p>Welcome <%=email%> </p>
+<% }
+else{ %>
+    <p>Please Login</p>
+<% } %>
 <h1>WELCOME FROM MY HOME</h1>
+

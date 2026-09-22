@@ -17,14 +17,26 @@ const PORT = process.env.PORT;
 let __filename = url.fileURLToPath(import.meta.url) 
 let __dirname = path.dirname(__filename);
 
-
-server.use(express.json()) // parse incoming JSON data into a JavaScript object
-server.use(express.urlencoded({extended:true})) // parse incoming HTML form data
-server.use(cookieParser()) //parse incoming cookies
-server.use(express.static(path.join(__dirname,'public'),{extensions:['html']})) // serve static files from the public folder,every request Does this URL correspond to a file in public?
-server.set('view engine', 'ejs'); // tell Express to use EJS as the view engine 
-server.set('views', path.join(__dirname,'views')); // Hey Express, remember this information: when somebody asks you to render a view, the views are located here 
-server.use(loggerMiddleware) // logger middleware
+// parse incoming JSON data into a JavaScript object
+server.use(express.json()) 
+// parse incoming HTML form data
+server.use(express.urlencoded({extended:true})) 
+//parse incoming cookies
+server.use(cookieParser())
+ // serve static files from the public folder,every request Does this URL correspond to a file in public?
+server.use(express.static(path.join(__dirname,'public'),{extensions:['html']}))
+// tell Express to use EJS as the view engine 
+server.set('view engine', 'ejs'); 
+// Hey Express, remember this information: when somebody asks you to render a view, the views are located here 
+server.set('views', path.join(__dirname,'views'));
+ // logger middleware
+server.use(loggerMiddleware)
+ // hx middleware
+server.use( (req,res,next)=> {
+    res.locals.isHtmx = req.headers['hx-request'] && !req.headers['hx-history-restore-request']? true:false;
+    next()
+ 
+})
 
 server.use('/', homeRouter)
 server.use('/register', registerRouter)

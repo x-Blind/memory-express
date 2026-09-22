@@ -1,5 +1,9 @@
+<% if(hx){ %>
+    <title><%=title%></title>
+<% } %>
 <h1>WELCOME IN REGISTER</h1>
-<form class="register-form" action="/register" method="post">
+<form class="register-form" action="/register" method="post" 
+      hx-post="/register" hx-target="#app" hx-swap="innerHTML" >
 
     <label> EMAIL:
         <input id="email" name="email" type="text">

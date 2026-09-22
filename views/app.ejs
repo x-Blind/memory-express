@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %> </title>
     <link rel="stylesheet" href="style.css">
+    <meta name="htmx-config" content='{"includeIndicatorStyles": false}'>
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js"></script>
 </head>
 <body>
-<header>
-    <div class="navbar">
-        <a href="/home"      hx-get="/home"     hx-target="#app" hx-push-url="true">Home</a>
-        <a href="/products"  hx-get="/products" hx-target="#app" hx-push-url="true">Products</a>
-        <a href="/register"  hx-get="/register" hx-target="#app" hx-push-url="true">Register</a>
-        <a href="/login"     hx-get="/login"    hx-target="#app" hx-push-url="true" >Login</a>
-    </div>      
-</header>
+    <header>
+        <div class="navbar" hx-target="#app" hx-push-url="true">
+            <a href="/home"      hx-get="/home"     >Home</a>
+            <a href="/products"  hx-get="/products" >Products</a>
+            <a href="/register"  hx-get="/register" >Register</a>
+            <a href="/login"     hx-get="/login"     >Login</a>
+        </div>      
+    </header>
 
     <main id="app">        
         <%- include('partials/'+ page) %>
     </main>
 
-<footer>
-    <h1>HERE'S THE FOOTER</h1>
-</footer>
+    <footer>
+        <h1>HERE'S THE FOOTER</h1>
+    </footer>
 
-<script src="https://unpkg.com/htmx.org@2.0.0"></script>
 </body>
 </html>
